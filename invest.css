@@ -1,0 +1,50 @@
+/* Reset default styles for input fields */
+input, textarea {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    /* Add other common styles like line-height, etc. */
+}
+
+/* Theming with HSL */
+:root {
+    --primary-color: hsl(210, 80%, 50%);
+    --secondary-color: hsl(30, 90%, 60%);
+}
+input {
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Style specific input types */
+input[type="text"] {
+    /* Your styles here */
+}
+input[type="date"] {
+    /* Your styles here */
+}
+input[type="file"] {
+    /* Your styles here */
+}
+
+/* Readonly and disabled states */
+input[readonly], textarea[readonly] {
+    /* Your styles for readonly inputs */
+}
+input:disabled, textarea:disabled {
+    /* Your styles for disabled inputs */
+}
+
+/* Modern button styles */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Add hover and focus styles */
+}
